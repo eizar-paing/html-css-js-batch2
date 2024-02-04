@@ -1,4 +1,4 @@
-# html-css-js-batch2 - building websites with HTML, CSS and JavaScript
+# Building Websites with HTML, CSS and JavaScript
 
 ## Tools
 
