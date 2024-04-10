@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent-div1 {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(244, 212, 169);
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .parent-div2 {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .parent-div3 {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: khaki;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent-div4 {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(153, 251, 251);
+        justify-content: space-between;
+        align-items: stretch;
+      }
+      .parent-div5 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        background-color: aqua;
+        justify-content: space-around;
+        align-items: baseline;
+      }
+      
+      .child1 {
+        background-color: blueviolet;
+        min-width: 200px;
+        height: 100px;
+      }
+      .child2 {
+        background-color: cornflowerblue;
+        min-width: 200px;
+        height: 120px;
+      }
+      .child3 {
+        background-color: yellowgreen;
+        min-width: 200px;
+        height: 150px;
+      }
+      .num1 {
+        font-size: 20px;
+      }
+      .num2 {
+        font-size: 50px;
+      }
+      .num3 {
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex Start</h2>
+    <div class="parent-div1">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Flex End</h2>
+    <div class="parent-div2">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Center</h2>
+    <div class="parent-div3">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Stretch</h2>
+    <div class="parent-div4">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Baseline</h2>
+    <div class="parent-div5">
+      <div class="child1 num1">1</div>
+      <div class="child2 num2">2</div>
+      <div class="child3 num3">3</div>
+    </div>
+  </body>
+</html>
