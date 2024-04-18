@@ -16,15 +16,16 @@
       }
       .flexbox-1 {
         display: flex;
+        flex-wrap: wrap;
       }
       .article {
-        flex: 1;
+        flex: 25%;
         background-color: aquamarine;
         margin: 10px;
         padding: 10px;
       }
       .article3 {
-        flex: 2;
+        flex: 40%;
         background-color: aquamarine;
         display: flex;
         flex-direction: column;
@@ -33,12 +34,28 @@
       }
       .button-box {
         display: flex;
+        flex-wrap: wrap;
       }
       .button-box button {
         flex: 1;
         margin: 5px;
         padding: 10px;
         font-size: 18px;
+      }
+
+      @media (max-width: 700px) {
+        .flexbox-1 {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .article {
+          flex: 40%;
+        }
+        .article3 {
+          flex: 100%;
+        }
       }
     </style>
   </head>
