@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+      }
+      .flex-container div {
+        flex: 1;
+        margin: 20px;
+        padding: 50px;
+        background-color: rgb(172, 171, 171);
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 80px;
+      }
+
+      @media (max-width: 600px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+    </div>
+    <div class="flex-container">
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+    </div>
+    <div class="flex-container">
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+    </div>
+  </body>
+</html>
