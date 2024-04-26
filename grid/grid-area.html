@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .item1 { grid-area: header; }
+      .item2 { grid-area: menu; }
+      .item3 { grid-area: main; }
+      .item4 { grid-area: right; }
+      .item5 { grid-area: footer; }
+
+      .grid-box1 {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 'header header header header header' 
+        'menu main main right right' 
+        'menu footer footer footer footer';
+      }
+
+      .grid-box1 div {
+        background-color: blueviolet;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .i-1 {
+        grid-area: area1;
+      }
+      .i-2 {
+        grid-area: area2;
+      }
+
+      .grid-box2 {
+        margin-top: 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 'area1 area1 area1 area2 area2 . . .'
+        'area1 area1 area1 area2 area2 . . . ';
+      }
+
+      .grid-box2 div {
+        background-color: chocolate;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-box1">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
+
+    <div class="grid-box2">
+      <div class="i-1">1</div>
+      <div class="i-2">2</div>
+      <div class="i-3">3</div>
+      <div class="i-4">4</div>
+      <div class="i-5">5</div>
+      <div class="i-6">6</div>
+      <div class="i-7">7</div>
+      <div class="i-8">8</div>
+      <div class="i-9">9</div>
+      <div class="i-10">10</div>
+    </div>
+  </body>
+</html>
