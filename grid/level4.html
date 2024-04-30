@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        height: 100vh;
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "a a a a a a a a a a a a" 
+        "b b b b b b b b e e e e" "c c c c d d d d e e e e";
+      }
+      .box1 {
+        grid-area: a;
+      }
+      .box2 {
+        grid-area: b;
+      }
+      .box3 {
+        grid-area: c;
+      }
+      .box4 {
+        grid-area: d;
+      }
+      .box5 {
+        grid-area: e;
+      }
+      .container div {
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          grid-template-areas: "a a a a a a a a a a a a"
+          "b b b b b b b b b b b b" "b b b b b b b b b b b b" 
+          "c c c c c c d d d d d d" "e e e e e e e e e e e e";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">A</div>
+      <div class="box2">B</div>
+      <div class="box3">C</div>
+      <div class="box4">D</div>
+      <div class="box5">E</div>
+    </div>
+  </body>
+</html>

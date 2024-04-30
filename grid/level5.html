@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        height: 100vh;
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "a a a a a a a a a a a a" 
+        "c c b b b b b b b b e e" "c c d d d d d d d d e e" 
+        "c c d d d d d d d d e e" "c c d d d d d d d d e e" 
+        "f f f f f f f f f f f f";
+      }
+      .box1 {
+        grid-area: a;
+      }
+      .box2 {
+        grid-area: b;
+      }
+      .box3 {
+        grid-area: c;
+      }
+      .box4 {
+        grid-area: d;
+      }
+      .box5 {
+        grid-area: e;
+      }
+      .box6 {
+        grid-area: f;
+      }
+      .container div {
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-areas: "a a a a a a a a a a a a" 
+          "b b b b b b b b b b b b" "c c d d d d d d d d d d" 
+          "c c d d d d d d d d d d" "c c d d d d d d d d d d" 
+          "e e f f f f f f f f f f";
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          grid-template-areas: "a a a a a a a a a a a a" 
+          "b b b b b b b b b b b b" "d d d d d d d d d d d d" 
+          "d d d d d d d d d d d d" "d d d d d d d d d d d d" 
+          "c c c c c c c c c c c c" "e e e e e e e e e e e e" 
+          "f f f f f f f f f f f f";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">A</div>
+      <div class="box2">B</div>
+      <div class="box3">C</div>
+      <div class="box4">D</div>
+      <div class="box5">E</div>
+      <div class="box6">F</div>
+    </div>
+  </body>
+</html>
