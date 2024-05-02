@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .header, .footer {
+    background-color: salmon;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  .left {
+    float: left;
+    background-color: plum;
+    width: 20%;
+  }
+  .main {
+    float: left;
+    background-color: greenyellow;
+    width: 60%;
+  }
+  .right {
+    float: right;
+    background-color: darkcyan;
+    width: 20%;
+  }
+
+  .left, .main, .right {
+    height: 300px;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    .left, .main, .right {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+</style>
+</head>
+<body>
+  <div class="header">Header</div>
+  <div class="left">Left</div>
+  <div class="main">Main</div>
+  <div class="right">Right</div>
+  <div class="footer">Footer</div>
+</body>
+</html>
+
+
