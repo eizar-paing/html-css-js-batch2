@@ -3,26 +3,55 @@
   <head>
     <style>
       .container {
-        max-width: 70%;
+        max-width: 50%;
         margin: 20px auto;
       }
       .parent-flexbox {
         display: flex;
       }
       .child1 {
-        width: 150px;
-        height: 80px;
+        width: 200px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
       }
       .child2 {
         display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgb(191, 189, 189);
+        border-bottom: 0.3px solid rgb(214, 213, 213);
+        padding: 20px;
+        margin-left: 20px;
+        padding-bottom: 40px;
       }
     </style>
   </head>
   <body>
+    <div class="container">
+      <div class="parent-flexbox">
+        <img class="child1" src="../images/cartoon1.jpg">
+        <div class="child2">
+          <div class="grandchild1">
+            <div>Business</div>
+            <div>25 December 2019</div>
+          </div>
+          <div class="grandchild2">3500</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="parent-flexbox">
+        <img class="child1" src="../images/cartoon1.jpg">
+        <div class="child2">
+          <div class="grandchild1">
+            <div>Business</div>
+            <div>25 December 2019</div>
+          </div>
+          <div class="grandchild2">3500</div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="parent-flexbox">
         <img class="child1" src="../images/cartoon1.jpg">

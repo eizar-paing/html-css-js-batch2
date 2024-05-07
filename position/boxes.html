@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 1200px;
+      }
+      .container, .abs-container {
+        width: 800px;
+        background-color: rgb(217, 217, 217);
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto;
+      }
+      .abs-container {
+        position: relative;
+      }
+      .item-static {
+        background-color: aquamarine;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+      }
+
+      .item-relative {
+        position: relative;
+        background-color: darkgoldenrod;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        top: 20px;
+        right: 20px;
+      }
+
+      .item-absolute {
+        position: absolute;
+        background-color: palegreen;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        top: 20px;
+        right: 20px;
+      }
+
+      .item-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: crimson;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+      }
+
+      .item-sticky {
+        position: sticky;
+        bottom: 0;
+        right: 0;
+        background-color: olivedrab;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-static">Static</div>
+      <div class="item-relative">Relative</div>
+      <div class="item-static">Static</div>
+    </div>
+    <div class="abs-container">
+      <div class="item-static">Static</div>
+      <div class="item-absolute">Absolute</div>
+      <div class="item-static">Static</div>
+    </div>
+    <div class="container">
+      <div class="item-static">Static</div>
+      <div class="item-fixed">Fixed</div>
+      <div class="item-static">Static</div>
+    </div>
+    <div class="item-sticky">Sticky</div>
+    <script>
+      var left = 0;
+    
+      function frame() {
+        var element = document.querySelector('.item-relative');
+        left += 2;
+        element.style.left = left + 'px';
+        if (left >= 300) {
+          clearInterval(id)
+        }
+      }
+      var id = setInterval(frame, 10)
+    </script>
+  </body>
+</html>
