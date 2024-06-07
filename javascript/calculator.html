@@ -3,19 +3,35 @@
   <head>
     <title>calculator</title>
     <script>
-      
+      // function format
+      // function functionName() {
+      //   ...
+      // }
+
+      //1. take the value that user entered in the input box 1
+      //2. take the value that user entered in the input box 2
+      //3. add the result of addition into one variable named result
+      //4. show the result to user
+
       function addFunction() {
+        // Text
+        // '2'+'3' = '23'
+        // 2 + 3 = 5
+        // let a = 2;
+        // '2' => 2
+        // Number('2'); // 2
         let num1 = Number(document.getElementById('number1').value);
         let num2 = Number(document.getElementById('number2').value);
         let res = num1 + num2;
-        document.getElementById('result').innerHTML = res
+        document.getElementById('res').innerHTML = res
+        // innerHTML allows modifying the full HTML content inside an element,
       }
 
-      function subFuntion() {
+      function subFunction() {
         let num1 = Number(document.getElementById('number1').value);
         let num2 = Number(document.getElementById('number2').value);
         let res = num1 - num2;
-        document.getElementById('result').innerHTML = res
+        document.getElementById('res').innerHTML = res
       }
 
       // let object1 = {
@@ -30,14 +46,32 @@
       // Number(str1) => NaN
       
     </script>
+    <style>
+      /* #number1 {
+        color: red;
+      }
+
+      #number2 {
+        color: green;
+      } */
+      .input-class {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .button-class {
+
+      }
+    </style>
   </head>
   <body>
-    <input type="number" id="number1"><br>
-    <input type="number" id="number2"><br>
-    <button onclick="addFunction()">add</button>
-    <button onclick="subFunction()">sub</button>
+    <input type="number" id="number1" class="input-class"><br>
+    <input type="number" id="number2" class="input-class"><br>
+    <button onclick="addFunction()" class="button-class">add</button>
+    <button onclick="subFunction()" class="button-class">sub</button>
     <button>mul</button>
     <button>div</button>
-    <p id="result"></p>
+    <p id="res">
+    </p>
   </body>
 </html>
