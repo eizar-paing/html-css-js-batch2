@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <style>
+      .bulb-img {
+        width: 100px;
+        height: 180px;
+      }
+    </style>
+    <!-- <script>
+      function turnOnFunction() {
+        // change the picture of switching on
+        document.getElementById("bulb").src = "images/pic_bulbon.jpeg";
+      }
+
+      function turnOffFunction() {
+        // change the picture of switching on
+        document.getElementById("bulb").src = "images/pic_bulboff.png";
+      }
+    </script> -->
+  </head>
+  <body>
+    <h2>Light Bulb</h2>
+    <button onclick="document.getElementById('bulb').src = 'images/pic_bulbon.jpeg'">Turn On</button>
+    <img id="bulb" src="images/pic_bulboff.png" class="bulb-img">
+    <button onclick="document.getElementById('bulb').src = 'images/pic_bulboff.png'">Turn Off</button>
+  </body>
+</html>
