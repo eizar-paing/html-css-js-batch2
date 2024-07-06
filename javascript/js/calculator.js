@@ -22,8 +22,6 @@ function addFunction() {
   // innerHTML allows modifying the full HTML content inside an element,
 }
 
-
-
 // let object1 = {
 //   name: "JJ",
 //   address: "Yangon"

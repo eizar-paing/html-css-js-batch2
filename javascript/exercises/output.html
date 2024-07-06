@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <style>
+      p {
+        display: none;
+      }
+    </style>
+    <script>
+      function showMe() {
+        window.alert("Show paragraph!");
+        document.getElementById("demo").style.display = "block";
+        console.log("Displayed paragraph!")
+      }
+    </script>
+  </head>
+  <body>
+    <h2>My First Web Page</h2>
+    <p id="demo">Hello JavaScript!</p>
+    <button onclick="showMe()">Show Me!</button>
+    <button onclick="hideMe()">Hide Me!</button>
+  </body>
+</html>
