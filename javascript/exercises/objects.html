@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const person = {id: 1, person_name: "John", address: "Yangon", phone1: "09-123456789", phone2: "09-111111111"};
+      person.phone1 = "09-999999999";
+      person.nrc = "01111111";
+      document.getElementById("demo").innerHTML = person.person_name + ", " + person.address + ", " + person.phone1 + ", " + person.nrc;
+    </script>
+  </body>
+</html>
