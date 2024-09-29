@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if(username == "ezp" && password == "pass1234") {
+          window.location.href = "home.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="username" name="username" placeholder="UserName"><br>
+      <input type="password" id="password" name="password" placeholder="Password"><br><br>
+      <input type="button" value="Login" onclick="login()">
+    </form> 
+    
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    
+    </body>
+</html>

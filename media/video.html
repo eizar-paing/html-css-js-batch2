@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function displayVideo(url) {
+        document.getElementById("myvideo").src = url;
+      }
+    </script>
+    <style>
+      button:focus {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Video</h1>
+    <button onclick="displayVideo('../videos/sea.mp4')">Sea</button>
+    <button onclick="displayVideo('../videos/cartoon.mp4')">Cartoon</button>
+    <button onclick="displayVideo('../videos/world.mp4')">World</button>
+    
+    <video id="myvideo" controls loop muted autoplay>
+      <source src="../videos/world.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>
